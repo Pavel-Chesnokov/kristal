@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Описание содержимого страницы">
+  <meta name="keywords" content="Ключевые слова через запятую">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo" onclick="slowScroll('#main')">
+      <span>KRISTAL</span>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="flex.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    </div>
+    <div id="main">
+      <img src="img\main\beach-calm-calm-waters-cut.jpg" alt="" class="">
+    </div>
+    <div class="gallery">
+      <div class="div">
+        <img src="img\pexels-photo-368893.jpeg">
+        <img src="img\pexels-photo-573238.jpeg">
+        <img src="img\pexels-photo-1208074.jpeg">
+        <img src="img\pexels-photo-1261408.jpeg">
+        <img src="img\pexels-photo-1902891.jpeg">
+        <img src="img\pexels-photo-1657110.jpeg">
+      </div>
+      <div class="div">
+        <img src="img\pexels-photo-1680317.jpeg">
+        <img src="img\pexels-photo-1770452.jpeg">
+        <img src="img\pexels-photo-1844253.jpeg">
+        <img src="img\pexels-photo-1851471.jpeg">
+      </div>
+      <div class="div">
+        <img src="img\pexels-photo-1877802.jpeg">
+        <img src="img\pexels-photo-1884971.jpeg">
+        <img src="img\pexels-photo-1886550.jpeg">
+        <img src="img\pexels-photo-1886907.jpeg">
+      </div>
+      <div class="div">
+        <img src="img\pexels-photo-1897359.jpeg">
+        <img src="img\pexels-photo-1899197.jpeg">
+        <img src="img\pexels-photo-1904105.jpeg">
+        <img src="img\pexels-photo-1905054.jpeg">
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function() {
+      if ($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+
+</html>

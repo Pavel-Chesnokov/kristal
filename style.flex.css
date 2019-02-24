@@ -1,0 +1,56 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; /*выравнивание по горизонтали*/
+  align-items: flex-start; /*выравнивание по вертикали*/ */ */
+  align-content: flex-start;  /*многострочное выравнивание*/
+
+
+
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* align-items: baseline; */
+}
+
+.flex-item:nth-child(1) {
+  order: 0;
+  flex: 0 0 100px;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+тоже самое что flex: 1 1 100px*/
+
+}
+
+.flex-item:nth-child(2) {
+  order: 0;
+  flex: 0 0 100px;
+}
+
+.flex-item:nth-child(3) {
+  order: 0;
+  flex: 0 0 100px;
+}
+
+.flex-item:nth-child(4) {
+  order: 0;
+  flex: 0 0 100px;
+}
+
+.flex-item:nth-child(5) {
+  order: 0;
+  flex: 0 0 100px;
+}
+
+
+
+.flex-item {
+  background-color: silver;
+  padding: 10px;
+  margin: 0 0 10px 10px;
+}
+
+.flex-item:first-line{
+  font-weight: bold;
+}
